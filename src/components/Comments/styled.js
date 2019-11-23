@@ -11,7 +11,7 @@ export const CommentsWrapper = styled.section`
     max-width: 100%;
   `}
 
-  iframe[src*='ads-iframe'] {
+  iframe[src*="ads-iframe"] {
     display: none;
   }
 
@@ -29,6 +29,6 @@ export const CommentsTitle = styled.h2`
   padding-bottom: 2rem;
 
   ${media.lessThan("large")`
-    font-size: 1.375rem;
-  `}
+  font-size: 1.375rem;
+ `}
 `
