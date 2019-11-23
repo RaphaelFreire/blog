@@ -1,26 +1,26 @@
-const postsQuery = `{
-    posts: allMarkdownRemark(
-      sort: { fields: frontmatter___date, order: DESC }
-    ) {
-      edges {
-        node {
-          objectID: id
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            background
-            category
-            date_timestamp: date
-            date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
-            description
-          }
-          excerpt(pruneLength: 5000)
+require("dotenv").config()
+
+const postQuery = `{
+  posts: allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }){
+    edges {
+      node {
+        objectID: id
+        fields {
+          slug
         }
+        frontmatter {
+          title
+          background
+          category
+          date_timestamp: date
+          date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
+          description
+        }
+        excerpt(pruneLength: 5000)
       }
     }
-  }`
+  }
+}`
 
 const flatten = arr =>
   arr.map(({ node: { frontmatter, ...rest } }) => ({
@@ -30,15 +30,14 @@ const flatten = arr =>
     ),
     ...rest,
   }))
+const settings = { attributesToSnippet: [`excerpt:20`] }
 
 const queries = [
   {
-    query: postsQuery,
+    query: postQuery,
     transformer: ({ data }) => flatten(data.posts.edges),
-    indexName: "Posts",
-    settings: {
-      attributesToSnippet: ["excerpt:20"],
-    },
+    indexName: process.env.GATSBY_ALGOLIA_INDEX_NAME,
+    settings,
   },
 ]
 

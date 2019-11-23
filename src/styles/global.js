@@ -63,7 +63,7 @@ const GlobalStyles = createGlobalStyle`
   	height: auto;
   }
 
-  body.dark{
+  body.dark {
     --borders: #38444d;
     --texts: #8899a6;
     --postColor: #fff;
@@ -74,10 +74,10 @@ const GlobalStyles = createGlobalStyle`
     --black: #222;
   }
 
-  body.light{
+  body.light {
     --borders: #dedede;
+    --postColor: #111;
     --texts: #555555;
-    --postColor: #555555;
     --highlight: #1fa1f2;
     --mediumBackground: #f0f0f3;
     --background: #fff;

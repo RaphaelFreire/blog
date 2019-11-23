@@ -5,7 +5,7 @@ export const ListWrapper = styled.section`
     background-color: var(--borders);
     border-bottom: 1px solid var(--borders);
     display: grid;
-    display-area: posts;
+    grid-area: posts;
     grid-gap: 1px;
     grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
   }

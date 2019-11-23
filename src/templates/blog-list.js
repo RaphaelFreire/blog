@@ -30,7 +30,6 @@ const BlogList = props => {
             },
           }) => (
             <PostItem
-              key="id"
               slug={slug}
               background={background}
               category={category}
@@ -42,6 +41,7 @@ const BlogList = props => {
           )
         )}
       </S.ListWrapper>
+
       <Pagination
         isFirst={isFirst}
         isLast={isLast}
@@ -74,12 +74,10 @@ export const query = graphql`
             title
           }
           timeToRead
-          wordCount {
-            words
-          }
         }
       }
     }
   }
 `
+
 export default BlogList

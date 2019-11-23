@@ -1,12 +1,12 @@
-const Links = [
-	{
-		label: "Home",
-		url: "/"
-	},
-	{
-		label: "Sobre mim",
-		url: "/about/"
-	}
-];
+const links = [
+  {
+    label: "Home",
+    url: "/",
+  },
+  {
+    label: "Sobre Mim",
+    url: "/about/",
+  },
+]
 
-export default Links;
+export default links
