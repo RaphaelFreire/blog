@@ -9,8 +9,11 @@ const Avatar = () => {
       query {
         avatarImage: file(relativePath: { eq: "profile-photo.png" }) {
           childImageSharp {
-            fluid(maxWidth: 60) {
-              ...GatsbyImageSharpFluid_tracedSVG
+            fluid(
+              maxWidth: 60
+              quality: 100
+            ) {
+              ...GatsbyImageSharpFluid
             }
           }
         }

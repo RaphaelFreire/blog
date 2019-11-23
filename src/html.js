@@ -40,8 +40,9 @@ export default function HTML(props) {
               }
 
               setTheme(preferredTheme || 'dark');
+            
 
-              window.__onDisplayChange = function() {};
+            window.__onDisplayChange = function() {};
 
               function setDisplay(newDisplay) {
                 window.__display = newDisplay;
@@ -64,6 +65,8 @@ export default function HTML(props) {
 
               setDisplay(preferredDisplay || 'list');
             })();
+
+
           `,
           }}
         />
