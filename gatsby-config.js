@@ -1,14 +1,14 @@
 require("dotenv").config();
 
-const queries = require("./src/utils/algolia_queries");
+const queries = require("./src/utils/algolia_queries.js");
 
 module.exports = {
 	siteMetadata: {
-		title: `John Doe`,
-		position: `Backend Developer`,
-		description: `A blog about backend development and other cool stuff.`,
-		author: `@myblog`,
-		siteUrl: `https://gatsby-course-will.netlify.com`
+		title: `Raphael Freire`,
+		position: `Front-End`,
+		description: `Analista de Marketing Especialista em Front-End`,
+		author: `Raphael Freire`,
+		siteUrl: `https://raphaelfreire.com`
 	},
 	plugins: [
 		`gatsby-plugin-transition-link`,
@@ -39,6 +39,15 @@ module.exports = {
 		{
 			resolve: `gatsby-transformer-remark`,
 			options: {
+				// CommonMark mode (default: true)
+				commonmark: true,
+				// Footnotes mode (default: true)
+				footnotes: true,
+				// Pedantic mode (default: true)
+				pedantic: true,
+				// GitHub Flavored Markdown mode (default: true)
+				gfm: true,
+				// Plugins configs
 				plugins: [
 					{
 						resolve: "gatsby-remark-relative-images",
@@ -67,15 +76,15 @@ module.exports = {
 				apiKey: process.env.ALGOLIA_ADMIN_KEY,
 				indexName: process.env.GATSBY_ALGOLIA_INDEX_NAME,
 				queries,
-				chunkSize: 10000, // default: 1000
-				enablePartialUpdates: true
+				chunkSize: 10000,
+				enablePartialUpdates: true // default: false
 			}
 		},
 		{
 			resolve: `gatsby-plugin-manifest`,
 			options: {
-				name: `John Doe`,
-				short_name: `John Doe`,
+				name: `Raphael Machado Freire`,
+				short_name: `Raphael Freire`,
 				start_url: `/`,
 				background_color: `#16202c`,
 				theme_color: `#16202c`,
@@ -86,7 +95,6 @@ module.exports = {
 		`gatsby-plugin-sitemap`,
 		// this (optional) plugin enables Progressive Web App + Offline functionality
 		// To learn more, visit: https://gatsby.dev/offline
-		`gatsby-plugin-offline`,
-		`gatsby-plugin-netlify-cms`
+		`gatsby-plugin-offline`
 	]
 };
