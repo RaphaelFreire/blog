@@ -8,7 +8,7 @@ const MenuLinks = () => (
 		<S.MenuLinksList>
 			{links.map((link, i) => (
 				<S.MenuLinksItem key={i}>
-					<S.MenuLinksLink
+					{/* <S.MenuLinksLink
 						cover
 						direction="top"
 						bg="#16202c"
@@ -17,7 +17,7 @@ const MenuLinks = () => (
 						activeClassName="active"
 					>
 						{link.label}
-					</S.MenuLinksLink>
+					</S.MenuLinksLink> */}
 				</S.MenuLinksItem>
 			))}
 		</S.MenuLinksList>

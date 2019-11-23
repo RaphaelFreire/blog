@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import media from "styled-media-query";
-import Anilink from "gatsby-plugin-transition-link/Anilink";
+// import Anilink from "gatsby-plugin-transition-link/Anilink";
 
 export const MenuLinksWrapper = styled.nav`
 	${media.lessThan("large")` 
@@ -21,12 +21,12 @@ export const MenuLinksItem = styled.li`
 	}
 `;
 
-export const MenuLinksLink = styled(Anilink)`
-	color: var(--texts);
-	text-decoration: none;
-	transition: color 0.5s;
+// export const MenuLinksLink = styled(Anilink)`
+// 	color: var(--texts);
+// 	text-decoration: none;
+// 	transition: color 0.5s;
 
-	&:hover {
-		color: var(--highlight);
-	}
-`;
+// 	&:hover {
+// 		color: var(--highlight);
+// 	}
+// `;
