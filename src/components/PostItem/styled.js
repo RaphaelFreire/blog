@@ -1,20 +1,20 @@
 import styled from "styled-components";
 import media from "styled-media-query";
-// import Anilink from "gatsby-plugin-transition-link/Anilink";
+import Anilink from "gatsby-plugin-transition-link/Anilink";
 
-// export const PostItemLink = styled(Anilink)`
-// 	color: var(--texts);
-// 	display: flex;
-// 	text-decoration: none;
+export const PostItemLink = styled(Anilink)`
+	color: var(--texts);
+	display: flex;
+	text-decoration: none;
 
-// 	body#grid & {
-// 		background-color: var(--background);
-// 	}
+	body#grid & {
+		background-color: var(--background);
+	}
 
-// 	&:hover {
-// 		color: var(--highlight);
-// 	}
-// `;
+	&:hover {
+		color: var(--highlight);
+	}
+`;
 
 export const PostItemWrapper = styled.section`
 	align-items: center;

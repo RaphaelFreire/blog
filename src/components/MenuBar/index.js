@@ -27,7 +27,7 @@ const MenuBar = () => {
 	return (
 		<S.MenuBarWrapper>
 			<S.MenuBarGroup>
-				{/* <S.MenuBarLink
+				<S.MenuBarLink
 					to="/"
 					cover
 					transition="left"
@@ -38,8 +38,8 @@ const MenuBar = () => {
 					<S.MenuBarItem>
 						<Home />
 					</S.MenuBarItem>
-				</S.MenuBarLink> */}
-				{/* <S.MenuBarLink
+				</S.MenuBarLink>
+				<S.MenuBarLink
 					to="/search/"
 					cover
 					transition="left"
@@ -50,7 +50,7 @@ const MenuBar = () => {
 					<S.MenuBarItem>
 						<Search />
 					</S.MenuBarItem>
-				</S.MenuBarLink> */}
+				</S.MenuBarLink>
 			</S.MenuBarGroup>
 
 			<S.MenuBarGroup>

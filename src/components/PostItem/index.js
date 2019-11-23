@@ -14,13 +14,13 @@ const PostItem = ({
 	title,
 	description
 }) => (
-	// <S.PostItemLink
-	// 	cover
-	// 	direction="right"
-	// 	bg={getThemeColor()}
-	// 	duration={0.6}
-	// 	to={slug}
-	// >
+	<S.PostItemLink
+		cover
+		direction="right"
+		bg={getThemeColor()}
+		duration={0.6}
+		to={slug}
+	>
 		<S.PostItemWrapper>
 			<S.PostItemTag background={background}>{category}</S.PostItemTag>
 
@@ -32,7 +32,7 @@ const PostItem = ({
 				<S.PostItemDescription>{description}</S.PostItemDescription>
 			</S.PostItemInfo>
 		</S.PostItemWrapper>
-	// </S.PostItemLink>
+	</S.PostItemLink>
 );
 
 PostItem.propTypes = {
