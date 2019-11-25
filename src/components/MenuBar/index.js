@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react"
 import { Home } from "styled-icons/boxicons-solid/Home"
 import { SearchAlt2 as Search } from "styled-icons/boxicons-regular/SearchAlt2"
 import { UpArrowAlt as Arrow } from "styled-icons/boxicons-regular/UpArrowAlt"
-import { LightbulbOutline as Light } from "styled-icons/material/LightbulbOutline"
+import { Lightbulb as Light } from "styled-icons/fa-regular/Lightbulb"
 import { Grid } from "styled-icons/boxicons-solid/Grid"
 import { ThList as List } from "styled-icons/typicons/ThList"
 
@@ -73,7 +73,12 @@ const MenuBar = () => {
         >
           {isListMode ? <Grid /> : <List />}
         </S.MenuBarItem>
-        <S.MenuBarItem title="Ir para o Topo">
+        <S.MenuBarItem
+          title="Ir para o Topo"
+          onClick={() => {
+            window.scroll({ top: 0, behavior: "smooth" })
+          }}
+        >
           <Arrow />
         </S.MenuBarItem>
       </S.MenuBarGroup>
