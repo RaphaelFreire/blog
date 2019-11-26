@@ -18,22 +18,22 @@ the aid of their country. This is just a
 regular paragraph.
 
 ```jsx
-import React from "react";
-import Profile from "../Profile";
-import SocialLinks from "../SocialLinks";
-import MenuLinks from "../MenuLinks";
+import React from "react"
+import Profile from "../Profile"
+import SocialLinks from "../SocialLinks"
+import MenuLinks from "../MenuLinks"
 
-import * as S from "./styled";
+import * as S from "./styled"
 
 const Sidebar = () => (
-	<S.SidebarWrapper>
-		<Profile />
-		<SocialLinks />
-		<MenuLinks />
-	</S.SidebarWrapper>
-);
+  <S.SidebarWrapper>
+    <Profile />
+    <SocialLinks />
+    <MenuLinks />
+  </S.SidebarWrapper>
+)
 
-export default Sidebar;
+export default Sidebar
 ```
 
 The quick brown fox jumped over the lazy
