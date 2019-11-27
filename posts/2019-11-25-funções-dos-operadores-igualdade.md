@@ -24,7 +24,7 @@ Quando `==` é usado, os valores poderão ser considerados iguais mesmo se forem
 
 Se `x` e `y` forem do mesmo tipo, então JavaScript usará o método `equals` para comparar os dois valores ou objetos. Qualquer outra combinação não listada na tabela resultará em `false`.
 
-Os métodos `toNumber` e `toPrimite` são internos e avaliam os valores de acordo com os resultados a seguir.
+Os métodos `toNumber` e `toPrimitive` são internos e avaliam os valores de acordo com os resultados a seguir.
 
 Método `toNumber`
 
