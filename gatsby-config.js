@@ -90,6 +90,7 @@ module.exports = {
 				theme_color: `#16202c`,
 				display: `minimal-ui`,
 				icon: `src/images/favicon.svg` // This path is relative to the root of the site.
+				
 			}
 		},
 		`gatsby-plugin-sitemap`,
