@@ -1,9 +1,9 @@
 ---
 date: 2019-12-06 21:20:00
-title: Exemplo de callback
-description: Curso de Node.js
-category: Node.js
-background: "##81ec56"
+title: Exemplo de Função Callback
+description: Estudando Funções Callback
+category: Node
+background: "#81ec56"
 ---
 
 Callbacks
@@ -15,7 +15,6 @@ Funções Callbacks trabalha com o “estilo de passagem de continuação”. Em
 Funções de Callback não são features da linguagem, apenas uma convenção para usar funções em Javascript.
 
 ```js
-
 function obterUsuario(callback) {
   setTimeout(function() {
     return callback(null, {
@@ -49,7 +48,7 @@ obterUsuario(function resolverUsuario(error, usuario) {
     console.erro("Deu Ruim em USUARIO", error)
     return
   }
-  
+
   obterTelefone(usuario.id, function resolverTelefone(error1, telefone) {
     if (error1) {
       console.log("Deu ruim em TELEFONE", error)
@@ -70,11 +69,9 @@ obterUsuario(function resolverUsuario(error, usuario) {
     })
   })
 })
-
 ```
 
-fontes: 
+fontes:
 https://fernandofranzini.wordpress.com/2017/06/08/programacao-assincrona/
 https://imasters.com.br/desenvolvimento/gerenciando-o-fluxo-assincrono-de-operacoes-em-nodejs
 https://cursos.nodebr.org/
-
