@@ -71,7 +71,6 @@ obterUsuario(function resolverUsuario(error, usuario) {
 })
 ```
 
-fontes:
+Fontes: https://cursos.nodebr.org/
 https://fernandofranzini.wordpress.com/2017/06/08/programacao-assincrona/
 https://imasters.com.br/desenvolvimento/gerenciando-o-fluxo-assincrono-de-operacoes-em-nodejs
-https://cursos.nodebr.org/
