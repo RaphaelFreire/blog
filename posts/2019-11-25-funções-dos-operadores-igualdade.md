@@ -47,3 +47,6 @@ Já o operador `===` ? Esse é muito mais simples. Se estivermos comparando dois
 | String  |      x e y têm caracteres idênticos       |   true    |
 | Bolean  |  x e y são ambos true ou são ambos false  |   true    |
 | Object  |     x e y referenciam o mesmo objeto      |   true    |
+
+
+Fonte: Livro Estrutura de dados e algoritmos com JavaScript - Loiane Groner

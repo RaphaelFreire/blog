@@ -37,3 +37,5 @@ A Instrução `if...else` também pode ser representada por um operador ternári
 (num === 1) ? console.log("num is equal to 1") : console.log("not equal to 1, the value of num is " + num);
 
 ```
+
+Fonte: Livro Estrutura de dados e algoritmos com JavaScript - Loiane Groner

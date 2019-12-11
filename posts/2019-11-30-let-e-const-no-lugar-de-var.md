@@ -69,3 +69,4 @@ Se tentarmos executar esse código, ele funcionará. No entanto, variáveis `con
 
 Se tentarmos atribuir uma nova referência à variável jsFramework, como vemos a seguir, o compilador reclamará e lançará um erro (`jsFramework` is read-only).
 
+Fonte: Livro Estrutura de dados e algoritmos com JavaScript - Loiane Groner

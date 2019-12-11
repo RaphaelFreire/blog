@@ -69,3 +69,6 @@ chamada `phrase` linha{4} no escopo da função. Então, linha {5}, declaramos n
 Na linha {6}, alteramos o valor `phrase`. Como ainda estamos dentro da instrução `if`, apenas a variável declarada na linha {5} terá o seu valor alterado.
 
 Em seguida, linha {7}, alteramos novamente o valor de `phrase`, mas como não estamos no bloco da instrução `if`, o valor da variável declarada na linha {4} é alterado.
+
+
+Fonte: Livro Estrutura de dados e algoritmos com JavaScript - Loiane Groner

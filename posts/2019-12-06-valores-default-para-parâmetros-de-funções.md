@@ -19,3 +19,5 @@ console.log(sum(2,2)); // exibe como saída 9
 ```
 
 Como não estamos passando z como parâmetro, ele terá um valor igual a 3 como default.
+
+Fonte: Livro Estrutura de dados e algoritmos com JavaScript - Loiane Groner
