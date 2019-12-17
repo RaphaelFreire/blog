@@ -53,4 +53,15 @@ var obj2 = { x: x, y: y }
 console.log(obj2) // {x:"a", y:"b"}
 ```
 
+A última funcionalidade que discutiremos nesta seção se chama nome de método abreviados (shorthand method names). Ela permite que os desenvolvedores declarem funções dentro de objetos, como se elas fossem propriedades
+
+```js
+const hello = {
+  name: "abcdef",
+  printHello() {
+    console.log("Hello")
+  },
+}
+```
+
 Fonte: Livro Estrutura de dados e algoritmos com JavaScript - Loiane Groner
